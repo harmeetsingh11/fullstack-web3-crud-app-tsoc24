@@ -26,6 +26,14 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const POSTGRES_DATABASE: string;
+	export const POSTGRES_HOST: string;
+	export const POSTGRES_PASSWORD: string;
+	export const POSTGRES_PRISMA_URL: string;
+	export const POSTGRES_URL: string;
+	export const POSTGRES_URL_NON_POOLING: string;
+	export const POSTGRES_URL_NO_SSL: string;
+	export const POSTGRES_USER: string;
 	export const SHELL: string;
 	export const SESSION_MANAGER: string;
 	export const WINDOWID: string;
@@ -56,7 +64,6 @@ declare module '$env/static/private' {
 	export const GTK_EXE_PREFIX: string;
 	export const XDG_SESSION_TYPE: string;
 	export const GPG_AGENT_INFO: string;
-	export const BUN_WHICH_IGNORE_CWD: string;
 	export const _: string;
 	export const XAUTHORITY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
@@ -70,7 +77,6 @@ declare module '$env/static/private' {
 	export const VTE_VERSION: string;
 	export const GIT_ASKPASS: string;
 	export const XDG_SEAT_PATH: string;
-	export const INIT_CWD: string;
 	export const CHROME_DESKTOP: string;
 	export const NVM_DIR: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -87,6 +93,7 @@ declare module '$env/static/private' {
 	export const GTK_PATH_VSCODE_SNAP_ORIG: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const DISPLAY: string;
+	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
 	export const NVM_CD_FLAGS: string;
 	export const LOCPATH: string;
@@ -113,6 +120,7 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const OLDPWD: string;
 	export const TERM_PROGRAM: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -144,6 +152,14 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		POSTGRES_DATABASE: string;
+		POSTGRES_HOST: string;
+		POSTGRES_PASSWORD: string;
+		POSTGRES_PRISMA_URL: string;
+		POSTGRES_URL: string;
+		POSTGRES_URL_NON_POOLING: string;
+		POSTGRES_URL_NO_SSL: string;
+		POSTGRES_USER: string;
 		SHELL: string;
 		SESSION_MANAGER: string;
 		WINDOWID: string;
@@ -174,7 +190,6 @@ declare module '$env/dynamic/private' {
 		GTK_EXE_PREFIX: string;
 		XDG_SESSION_TYPE: string;
 		GPG_AGENT_INFO: string;
-		BUN_WHICH_IGNORE_CWD: string;
 		_: string;
 		XAUTHORITY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
@@ -188,7 +203,6 @@ declare module '$env/dynamic/private' {
 		VTE_VERSION: string;
 		GIT_ASKPASS: string;
 		XDG_SEAT_PATH: string;
-		INIT_CWD: string;
 		CHROME_DESKTOP: string;
 		NVM_DIR: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -205,6 +219,7 @@ declare module '$env/dynamic/private' {
 		GTK_PATH_VSCODE_SNAP_ORIG: string;
 		VSCODE_GIT_IPC_HANDLE: string;
 		DISPLAY: string;
+		npm_lifecycle_event: string;
 		SHLVL: string;
 		NVM_CD_FLAGS: string;
 		LOCPATH: string;
@@ -231,6 +246,7 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		OLDPWD: string;
 		TERM_PROGRAM: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
